@@ -1,0 +1,124 @@
+.nav-div {
+    display: flex;
+}
+
+.home-content {
+    flex-grow: 1;
+}
+
+.profile-head-name {
+    font-size: 12px;
+    line-height: 14px;
+    color: #232323;
+}
+
+.user-div {
+    width: 142px;
+    height: 39px;
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    border: 1px solid #BCBCBC;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.user-div i.down {
+    transition: all 0.3s ease;
+}
+
+.user-div i.up {
+    transition: all 0.3s ease;
+    transform: rotate(-180deg);
+}
+
+.user-pic {
+    width: 40px;
+    height: 35px;
+    border: 1px solid #cdd1dc;
+    border-radius: 45%;
+    padding: 3px;
+    background-color: aliceblue;
+
+}
+
+.sub-menu-wrap {
+    float: right;
+    max-height: 0px;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: max-height 0.5s;
+    box-shadow: 1px 1px 10px rgba(46, 114, 174, 0.867);
+    margin-top: -10px;
+    margin-right: 10px;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+
+}
+
+.sub-menu-wrap.open-profile {
+    transition: max-height 0.5s;
+    max-height: 400px;
+}
+
+.profile-sub-menu {
+    background: #fff;
+    padding: 20px;
+    margin-top: -10px;
+    color: #232323;
+
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    color: #232323;
+}
+
+.user-info h3 {
+    font-weight: 500;
+}
+
+.user-info img {
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-top: -10px;
+}
+
+.profile-sub-menu hr {
+    border: 0;
+    height: 1px;
+    width: 100%;
+    background: #ccc;
+    margin: 5px 0;
+}
+
+.profile-sub-menu-link {
+    display: flex;
+    align-items: center;
+    color: #232323;
+    /* text-decoration: none; */
+    /* margin: 12px 0; */
+}
+
+.profile-sub-menu-link:hover {
+    /* text-decoration: none; */
+    color: #f7f5f5;
+    opacity: 1;
+    background: #207DFF;
+    border-radius: 5px;
+    /* border-right: 2px solid #207DFF; */
+}
+
+.profile-sub-menu-link p {
+    width: 100%;
+
+}
+
+.profile-sub-menu-link img {
+    width: 40px;
+    padding: 10px;
+    margin-right: 15px;
+}

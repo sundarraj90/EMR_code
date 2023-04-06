@@ -1,0 +1,11 @@
+@mixin bordered($color, $width) {
+    border: $width solid $color;
+}
+
+@mixin bordered-left($color, $width) {
+    border-left: $width solid $color;
+}
+
+@mixin transitions($sec) {
+    transition: all $sec ease;
+}

@@ -1,0 +1,160 @@
+//  =================
+//      Imports
+//  =================
+
+@import './base/base'; // Base Variables
+
+// colors
+$light-color: $light;
+$primary-color: $primary;
+$gray-color: $gray;
+$gray-second-color: $gray-second;
+$gray-fifth-color: $gray-fifth;
+
+// font-sizes
+$f-sm: $font-sm; // 10px
+$f-md: $font-md; // 12px
+$f-lg: $font-lg; // 14px
+
+// Time seconds
+$fs-seconds: $fs; // 0.3s
+$avg-seconds: $avg; // 0.5s
+
+// Pixel-sizes
+$p-xxm: $pixel-xxm; // 1px
+$p-sm: $pixel-sm; // 3px
+$p-md: $pixel-md; // 5px
+$p-lg: $pixel-lg; // 10px
+$p-xlg: $pixel-xlg; // 20px
+
+// Angles
+$a-half: $angle-half; // 180deg
+
+
+// Font Weight
+$fw-normal: $font-weight-normal; // 500
+
+
+.nav-div {
+    display: flex;
+}
+
+.home-content {
+    flex-grow: 1;
+}
+
+.profile-head-name {
+    font-size: $f-lg;
+    line-height: 14px;
+    color: $dark;
+}
+
+.user-div {
+    width: 142px;
+    height: 39px;
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    @include bordered($gray-color, $p-xxm);
+    border-radius: $p-md;
+    cursor: pointer;
+}
+
+.user-div i.down {
+    @include transitions($fs-seconds);
+}
+
+.user-div i.up {
+    @include transitions($fs-seconds);
+    transform: rotate(-$a-half);
+}
+
+.user-pic {
+    width: 40px;
+    height: 35px;
+    @include bordered($gray-color, $p-xxm);
+    border-radius: $pr-md;
+    padding: $p-sm;
+    background-color: $gray-fifth-color;
+
+}
+
+.sub-menu-wrap {
+    float: right;
+    max-height: 0px;
+    overflow: hidden;
+    border-radius: $p-lg;
+    transition: max-height $avg-seconds;
+    box-shadow: $p-xxm $p-xxm 5px $primary;
+    margin-top: -$p-lg;
+    margin-right: $p-lg;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+
+}
+
+.sub-menu-wrap.open-profile {
+    transition: max-height $avg-seconds;
+    max-height: 400px;
+}
+
+.profile-sub-menu {
+    background: $light;
+    padding: $p-xlg;
+    margin-top: -$p-lg;
+
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    color: $dark;
+}
+
+.user-info h3 {
+    font-weight: $fw-normal;
+}
+
+.user-info img {
+    width: 40px;
+    border-radius: 50%;
+    margin-right: $p-lg;
+    margin-top: -$p-lg;
+}
+
+.profile-sub-menu hr {
+    border: 0;
+    height: 1px;
+    width: 100%;
+    background: $gray;
+    margin: $p-md 0;
+}
+
+.profile-sub-menu-link {
+    display: flex;
+    align-items: center;
+    color: $dark;
+    //  text-decoration: none; 
+    //  margin: 12px 0; 
+}
+
+.profile-sub-menu-link:hover {
+    // text-decoration: none;
+    color: $light;
+    opacity: 1;
+    background: $primary;
+    border-radius: $p-md;
+    // border-right: 2px solid #207DFF; 
+}
+
+.profile-sub-menu-link p {
+    width: 100%;
+
+}
+
+.profile-sub-menu-link img {
+    width: 30px;
+    padding: $p-md;
+    margin-right: 15px;
+}

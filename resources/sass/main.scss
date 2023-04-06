@@ -1,0 +1,60 @@
+//  =================
+//      Imports
+//  =================
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap'); // Fonts
+@import './base/base'; // Base Variables
+
+// Pixel sizes
+$p-sm: $pixel-sm;
+$p-md: $pixel-md;
+$p-lg: $pixel-lg;
+$p-zero: $pixel-z;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: $body-bg;
+    overflow: auto;
+}
+
+/* Scrollbar Start */
+
+/* width */
+::-webkit-scrollbar {
+    display: none;
+    width: $p-sm;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset $p-zero $p-zero $p-md $gray-second;
+    border-radius: $p-lg;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: $primary;
+    border-radius: $p-lg;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: $primary;
+}
+
+
+/* Scrollbar End */
+
+
+/* Test decoration none Start */
+a {
+    text-decoration: none;
+}
+
+/* Test decoration none End*/
