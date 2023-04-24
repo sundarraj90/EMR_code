@@ -1,7 +1,7 @@
 #!/bin/bash
 
 www_dir=/var/www
-www_new_app_dir=$www_dir/deploy_24042023 <<<<<[deploy-new-mydomain.eu]
+www_new_app_dir=$www_dir/deploy_24042023
 #www_old_app_dir=$www_dir/deploy-old-mydomain.eu
 
 
