@@ -1,6 +1,6 @@
 #!/bin/bash
 
-www_dir=/var/www/html/
+www_dir=/var/www/html
 www_new_app_dir=$www_dir/deploy_24042023
 
 
