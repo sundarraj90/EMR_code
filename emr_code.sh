@@ -45,7 +45,7 @@ sudo setfacl -R -dm "g:www-data:rw" $www_new_app_dir/bootstrap
 
 sudo mv $www_new_app_dir $www_dir/EMR_code
 
-sudo cd $www_dir/EMR_code
+cd $www_dir/EMR_code
 # After rename to final destination name because cache stores the full paths
 sudo php artisan migrate
 sudo php artisan config:cache
