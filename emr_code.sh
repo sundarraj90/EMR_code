@@ -17,7 +17,7 @@ sudo chmod -R 770 $www_new_app_dir/
 
 # Next commands shall not run as root!!!
 #sudo apt-get install php-cli php-zip unzip -y
-sudo apt-get install -y php8.1-cli php8.1-common php8.1-mysql php8.1-zip php8.1-gd php8.1-mbstring php8.1-curl php8.1-xml php8.1-bcmath -y
+sudo apt-get install -y php8.1-cli php8.1-common php8.1-mysql php8.1-zip php8.1-gd php8.1-mbstring php8.1-curl php8.1-xml php8.1-bcmath
 
 # Download and install Composer
 sudo php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
