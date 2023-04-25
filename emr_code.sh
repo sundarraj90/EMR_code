@@ -16,7 +16,15 @@ sudo cp -R $www_dir/EMR_code/storage/app/ $www_new_app_dir/storage/
 sudo chmod -R 770 $www_new_app_dir/
 
 # Next commands shall not run as root!!!
-composer install --optimize-autoloader --no-dev
+sudo apt-get install php-cli php-zip unzip
+
+# Download and install Composer
+sudo php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+sudo php composer-setup.php --install-dir=/usr/local/bin --filename=composer
+
+# Cleanup
+sudo php -r "unlink('composer-setup.php');"
+#composer install --optimize-autoloader --no-dev
 
 sudo apt-get install nodejs npm 
 #npm run prod
