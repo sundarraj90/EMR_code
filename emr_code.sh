@@ -61,6 +61,6 @@ sudo php artisan storage:link
 # This should solve command setfacl above
 #rm -rf $www_old_app_dir
 
-echo "---------------------------------------------------"
+echo "----------------------------------------------------------"
 echo " DEPLOY IS DONE. CHECK ERROR MESSAGES. "
-echo "---------------------------------------------------"
+echo "----------------------------------------------------------"
