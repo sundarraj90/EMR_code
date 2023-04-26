@@ -32,7 +32,7 @@
         <div class="logo-details ms-3">
             <img src="{{ asset('assets/images/menu_bar_logo.png') }}" alt="">
             <span class="logo_name">
-                Dr.CARROT EMR
+                Dr.CARROT EMR Head
             </span>
         </div>
         <ul class="nav-links">
