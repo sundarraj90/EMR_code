@@ -3,6 +3,7 @@
 www_dir=/var/www/html
 www_new_app_dir=$www_dir/deploy_24042023
 
+sudo rm -rf www_dir/deploy_24042023
 
 git clone https://github.com/sundarraj90/EMR_code.git $www_new_app_dir
 cd $www_new_app_dir
