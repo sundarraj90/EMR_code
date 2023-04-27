@@ -183,7 +183,7 @@
                     <form action="{{ route('dashboard') }}" class="mt-md-5">
                         <div class="form-row">
                             <div class="col-lg-12">
-                                <label class="control-label" for="email">Email</label>
+                                <label class="control-label" for="email">User Id</label>
                                 <input type="email" placeholder="test.sample@testmail.com" autofocus id="email"
                                     class="form-control my-3 p-3">
                             </div>
