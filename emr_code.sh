@@ -44,8 +44,8 @@ sudo setfacl -R -dm "g:www-data:rw" $www_new_app_dir/bootstrap
 
 #mv $www_dir/mydomain.eu $www_old_app_dir
 
-sudo mv $www_new_app_dir $www_dir/EMR_code
-
+#sudo mv $www_new_app_dir $www_dir/EMR_code
+sudo cp -Rf $www_new_app_dir $www_dir/EMR_code
 cd $www_dir/EMR_code
 
 #composer installation steps
