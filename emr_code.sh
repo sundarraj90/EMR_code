@@ -47,14 +47,28 @@ sudo setfacl -R -dm "g:www-data:rw" $www_new_app_dir/bootstrap
 sudo mv $www_new_app_dir $www_dir/EMR_code
 
 cd $www_dir/EMR_code
-composer install -y
-# After rename to final destination name because cache stores the full paths
-sudo php artisan migrate
-sudo php artisan config:cache
-sudo php artisan route:cache
-sudo php artisan view:cache
 
-sudo php artisan storage:link
+#composer installation steps
+# Check if the user is root
+if [ "$EUID" -eq 0 ]; then
+    echo "Do not run Composer as root/super user!"
+    echo "Please run this script as a non-root user."
+    exit
+fi
+
+# Install Composer dependencies
+composer install --no-interaction
+
+# Exit with a success status code
+exit 0
+
+# After rename to final destination name because cache stores the full paths
+php artisan migrate
+php artisan config:cache
+php artisan route:cache
+php artisan view:cache
+
+php artisan storage:link
 
 # Possible problem cause jenkins user as memeber of group www-data is not able to delete
 # files with chmod 644 and Laravel generates files with chmod 644 by default as www-data.
