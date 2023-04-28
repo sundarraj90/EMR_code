@@ -9,7 +9,7 @@ git clone https://github.com/sundarraj90/EMR_code.git $www_new_app_dir
 cd $www_new_app_dir
 
 
-sudo cp $www_dir/deploy_24042023/.env_example $www_new_app_dir/.env
+sudo cp $www_dir/deploy_24042023/.env_example $www_dir/deploy_24042023/.env
 sudo mkdir -p $www_new_app_dir/storage/framework/
 sudo cp -R $www_dir/deploy_24042023/storage/framework/sessions/ $www_new_app_dir/storage/framework/
 sudo cp -R $www_dir/deploy_24042023/storage/app/ $www_new_app_dir/storage/
