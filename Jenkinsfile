@@ -53,3 +53,7 @@ pipeline {
                     sh "cd $www_new_app_dir"
                     sh "if [ \"$EUID\" -eq 0 ]; then echo \"Do not run Composer as root/super user!\"; echo \"Please run this script as a non-root user.\"; exit; fi"
                    
+                }
+            }
+        }
+    }
