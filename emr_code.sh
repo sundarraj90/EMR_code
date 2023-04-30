@@ -6,7 +6,7 @@ www_new_app_dir=$www_dir/deploy_24042023
 sudo rm -rf $www_new_app_dir
 
 git clone https://github.com/sundarraj90/EMR_code.git $www_new_app_dir
-cd $www_new_app_dir
+cd $www_dir/deploy_24042023
 
 
 sudo cp $www_dir/deploy_24042023/.env_example $www_dir/deploy_24042023/.env
